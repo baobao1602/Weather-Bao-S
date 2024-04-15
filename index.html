@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-Bao'S</title>
+    <link rel="icon" href="./img/logo-wether/sun.png" type="image/x-icon" />
+    <link rel="stylesheet" href="./font/fontawesome-free-6.5.1-web/css/all.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif !important;
+        }
+    </style>
+</head>
+<body>
+    <div class="app">
+        <div class="header grid__full-width">
+            <div class="header-logo">
+                <a href="./index.html"><img src="./img/logo-wether/Weather-Bao_S-removebg-preview.png" alt="logo"></a>
+            </div> 
+            <div class="header-search"> 
+                <div class="header-search--input grid__colum-10--1">
+                    <input type="text" id="search-history-id" class="search-history" placeholder="Nhập tỉnh/TP của bạn..." >
+                    
+                    <nav class="search-menu">
+                        <div class="search-menu--region">
+
+                            <ul class="menu-region">Đông Bắc Bộ
+                                <li class="region-city">Hà Giang</li>
+                                <li class="region-city">Cao Bằng</li>
+                                <li class="region-city">Bắc Kạn</li>
+                                <li class="region-city">Tuyên Quang</li>
+                                <li class="region-city">Thái Nguyên</li>
+                                <li class="region-city">Lạng Sơn</li>
+                                <li class="region-city">Quảng Ninh</li>
+                                <li class="region-city">Bắc Giang</li>
+                                <li class="region-city">Phú Thọ</li>
+                            </ul>
+
+                            <ul class="menu-region">Đông Bắc Bộ
+                                <li class="region-city">Hà Giang</li>
+                                <li class="region-city">Cao Bằng</li>
+                                <li class="region-city">Bắc Kạn</li>
+                                <li class="region-city">Tuyên Quang</li>
+                                <li class="region-city">Thái Nguyên</li>
+                                <li class="region-city">Lạng Sơn</li>
+                                <li class="region-city">Quảng Ninh</li>
+                                
+                            </ul>
+
+                            
+                        
+                        </div>
+                    </nav>
+
+                </div>
+                <button class="button-icon--search"><i class="icon-search ti-search"></i></button>
+            </div>
+            
+            <div class="time-day">
+                Giờ địa phương : 
+                <div class="time-hearder">2020-05-15 09:15</div>
+                
+                
+            </div>
+        </div>
+
+    <!-- content -->
+
+       <!-- danh muc -->
+            <div class="menu-main ">
+                <nav class="category">
+
+                    <ul class="category-list">
+                        <li class="category-item"> 
+                            <a href="#" class="list-item">Vị trí hiện tại</a>
+                        </li>
+                        <li class="category-item"> 
+                            <a href="./hourly-weather.html" class="list-item">Thời tiết theo giờ</a>
+                        </li>
+                        <li class="category-item"> 
+                            <a href="./day-weather.html" class="list-item">Thời tiết theo ngày</a>
+                        </li>
+                        <li class="category-item"> 
+                            <a href="./ari.html" class="list-item">Chất lượng không khí</a>
+                        </li>
+                    </ul>
+                
+                </nav>
+            </div>
+
+            
+        <div class="content grid grid__row grid__colum-10-flex">
+             
+
+            <!-- trang chinh -->
+
+            <div class="content-main grid__colum-60">
+                <!-- Vị trí hiện tại : -->
+                <div id="the-weather" class="the-weather--today grid__colum-10--1">
+                    <div class="Your-position">
+                        <h2 class="Your-position-item">Vị trí của bạn : </h2>
+                        <h2 class="Your-position-city">Hà Nội</h2>
+                    </div>
+        
+                    <nav class="today grid__colum-10-flex">
+                        <nav class="current-weather grid__colum-24">
+                            <div class="today-list">
+                                <h3 class="current-weather-item">Thời tiết hiện tại</h3>
+                                <div class="day-and-time">
+                                    <p class="dayAndTime">2020-05-15 | 90:15</p>
+                                    
+                                </div>
+                                <div class="today-list-item">
+                                    <div class="current-weather-icon">
+                                        <img src="./icon/weather/weather/64x64/day/179.png" alt="icon weather" class="icon-weather-1">
+                                    </div>
+                                    <div class="current-weather-temperature">
+                                        <div class="temperature-item">
+                                            <div class="temperature">26</div>
+                                            <div class="temperature°C">°C</div>
+                                        </div>
+                                        <div class="status">
+                                            mưa to
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+        
+                        </nav>
+        
+                        <nav class="hourly grid__colum-75">
+                            <div class="hourly-list">
+                                <ul id="myList" class="hourly-list--form grid__colum-10">
+                                    <li class="hourly-item grid__colum-2">
+                                        <h5 class="time--color">09:00</h5>                                   
+                                        <div class="hourly-item--img">
+                                            <img src="./img/cloudy.png" alt="icon weather" class="icon-weather-2">
+                                        </div>
+                                        <div class="hourly-item--temperature">
+                                            26°C
+                                        </div>
+
+                                        <div class="hourly-item--humidity">
+                                            <img src="./icon/icon-weather/humidity.png" alt="humidity" class="icon-humidity">
+                                            <p class="humidity-item">25%</p>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="hourly-item grid__colum-2">
+                                        <h5 class="time--color">09:00</h5>                                   
+                                        <div class="hourly-item--img">
+                                            <img src="./img/cloudy.png" alt="icon weather" class="icon-weather-2">
+                                        </div>
+                                        <div class="hourly-item--temperature">
+                                            26°C
+                                        </div>
+
+                                        <div class="hourly-item--humidity">
+                                            <img src="./icon/icon-weather/humidity.png" alt="humidity" class="icon-humidity">
+                                            <p class="humidity-item">25%</p>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="hourly-item grid__colum-2">
+                                        <h5 class="time--color">09:00</h5>                                   
+                                        <div class="hourly-item--img">
+                                            <img src="./img/cloudy.png" alt="icon weather" class="icon-weather-2">
+                                        </div>
+                                        <div class="hourly-item--temperature">
+                                            26°C
+                                        </div>
+
+                                        <div class="hourly-item--humidity">
+                                            <img src="./icon/icon-weather/humidity.png" alt="humidity" class="icon-humidity">
+                                            <p class="humidity-item">25%</p>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="hourly-item grid__colum-2">
+                                        <h5 class="time--color">09:00</h5>                                   
+                                        <div class="hourly-item--img">
+                                            <img src="./img/cloudy.png" alt="icon weather" class="icon-weather-2">
+                                        </div>
+                                        <div class="hourly-item--temperature">
+                                            26°C
+                                        </div>
+
+                                        <div class="hourly-item--humidity">
+                                            <img src="./icon/icon-weather/humidity.png" alt="humidity" class="icon-humidity">
+                                            <p class="humidity-item">25%</p>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="hourly-item grid__colum-2">
+                                        <h5 class="time--color">09:00</h5>                                   
+                                        <div class="hourly-item--img">
+                                            <img src="./img/cloudy.png" alt="icon weather" class="icon-weather-2">
+                                        </div>
+                                        <div class="hourly-item--temperature">
+                                            26°C
+                                        </div>
+
+                                        <div class="hourly-item--humidity">
+                                            <img src="./icon/icon-weather/humidity.png" alt="humidity" class="icon-humidity">
+                                            <p class="humidity-item">25%</p>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="hourly-item grid__colum-2">
+                                        <h5 class="time--color">09:00</h5>                                   
+                                        <div class="hourly-item--img">
+                                            <img src="./img/cloudy.png" alt="icon weather" class="icon-weather-2">
+                                        </div>
+                                        <div class="hourly-item--temperature">
+                                            26°C
+                                        </div>
+
+                                        <div class="hourly-item--humidity">
+                                            <img src="./icon/icon-weather/humidity.png" alt="humidity" class="icon-humidity">
+                                            <p class="humidity-item">25%</p>
+                                        </div>
+
+                                    </li>
+
+                                    <li class="hourly-item-buttom grid__colum-1-5">
+                                        <div class="hourly-item--all">
+                                            
+                                            <button class="all-hourly" ><a href="./hourly-weather.html">Xem thêm</a> </button>
+                                        </div>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                            </div>
+                        </nav>
+                    </nav>
+                </div>
+                <!-- Chi tiết -->
+                <nav class="detail grid__colum-9 ">
+                    <h4 class="detail-text">Chi tiết</h4>
+                    <div class="detail-list">
+                        <ul class="detail-list-item ">
+                            <li class="detail-item grid__colum-25--1">
+                                <img src="./icon/icon-weather/humidity.png" alt="humidity" class="detail-item--img humidity-img">
+                                
+                                <div class="detail-text-and-status">
+                                    <div class="detail-status"><span class="humidity-status">50</span>%</div>
+                                    <div class="detail-item--text humidity-text">Độ ẩm</div>
+                                </div>
+                            </li>
+                            <li class="detail-item grid__colum-25--1">
+                                <img src="./icon/icon-weather/wind.png" alt="wind" class="detail-item--img wind-img">
+                                
+                                <div class="detail-text-and-status">
+                                    <div class="detail-status"><span class="wind-status">5</span> km/giờ</div>
+                                    <div class="detail-item--text wind-text">Tốc độ gió</div>
+                                </div>
+                            </li>
+                            <li class="detail-item grid__colum-25--1">
+                                <img src="./icon/icon-weather/rain.png" alt="rain" class="detail-item--img rain-img">
+                                
+                                <div class="detail-text-and-status">
+                                    <div class="detail-status"><span class="rain-status">0</span> mm</div>
+                                    <div class="detail-item--text rain-text">Lượng mưa</div>
+                                </div>
+                            </li>
+                            <li class="detail-item grid__colum-25--1">
+                                <img src="./icon/icon-weather/direction.png" alt="direction" class="detail-item--img direction-img">
+                                
+                                <div class="detail-text-and-status">
+                                    <div class="detail-status direction-status">Bắc</div>
+                                    <div class="detail-item--text direction-text">Hướng gió</div>
+                                </div>
+                            </li>
+                            
+                        </ul>
+
+                        <ul class="detail-list-item">
+                            <li class="detail-item grid__colum-25--1">
+                                <img src="./icon/icon-weather/water-proof.png" alt="water-proof" class="detail-item--img waterProof-img">
+                                
+                                <div class="detail-text-and-status">
+                                    <div class="detail-status"><span class="waterProof-status">10</span>%</div>
+                                    <div class="detail-item--text waterProof-text">Khả năng mưa</div>
+                                </div>
+                            </li>
+                            <li class="detail-item grid__colum-25--1">
+                                <img src="./icon/icon-weather/protect.png" alt="UV" class="detail-item--img UV-img">
+                                
+                                <div class="detail-text-and-status">
+                                    <div class="detail-status UV-status">1,5</div>
+                                    <div class="detail-item--text UV-text">Chỉ số UV</div>
+                                </div>
+                            </li>
+                            <li class="detail-item grid__colum-25--1">
+                                <img src="./icon/icon-weather/wind (1).png" alt="Air quality" class="detail-item--img airQuality-img">
+                                
+                                <div class="detail-text-and-status">
+                                    <div class="detail-status airQuality-status">Trung bình</div>
+                                    <div class="detail-item--text airQuality-text">Chất lượng không khí</div>
+                                </div>
+                            </li>
+                            <li class="detail-item grid__colum-25--1">
+                                <img src="./icon/icon-weather/cloud.png" alt="cloud" class="detail-item--img cloud-img">
+                                
+                                <div class="detail-text-and-status">
+                                    <div class="detail-status"><span class="cloud-status">56</span>%</div>
+                                    <div class="detail-item--text cloud-text">Độ mây che phủ</div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <!-- Thời tiết theo ngày -->
+
+                <nav id="weather-by-day" class="weather-by-day grid__colum-9">
+                    <nav class="weather-day--title">
+                        <h3 class="weadther-day--title--text">
+                            Thời tiết Hà Nội theo ngày
+                        </h3>
+                        <button class="weather-day--title--click--all">
+                            <a href="./day-weather.html">Xem tất cả</a>
+                            </button>
+                    </nav>
+                    
+                    <nav class="weather-day--list">
+                        <ul class="weather-day--list--item grid__colum-90">
+                            
+                            <li class="day-item grid__colum-1-5">
+                                <h5 class="day-time--color">Hôm nay</h5>                                   
+                                <div class="day-item--img">
+                                    <img src="./img/cloudy.png" alt="icon weather" class="day-item--icon-weather-2">
+                                </div>
+                                <div class="day-item--temperature">
+                                   26°C
+                                </div>
+                                <div class="day-item--humidity">
+                                    <img src="./icon/icon-weather/humidity.png" alt="humidity" class="day-item--icon-humidity">
+                                    <p class="day-item--humidity">25%</p>
+                                </div>
+                            </li>
+
+                            <li class="day-item grid__colum-1-5">
+                                <h5 class="day-time--color">Hôm nay</h5>                                   
+                                <div class="day-item--img">
+                                    <img src="./img/cloudy.png" alt="icon weather" class="day-item--icon-weather-2">
+                                </div>
+                                <div class="day-item--temperature">
+                                   26°C
+                                </div>
+                                <div class="day-item--humidity">
+                                    <img src="./icon/icon-weather/humidity.png" alt="humidity" class="day-item--icon-humidity">
+                                    <p class="day-item--humidity">25%</p>
+                                </div>
+                            </li>
+
+                            <li class="day-item grid__colum-1-5">
+                                <h5 class="day-time--color">Hôm nay</h5>                                   
+                                <div class="day-item--img">
+                                    <img src="./img/cloudy.png" alt="icon weather" class="day-item--icon-weather-2">
+                                </div>
+                                <div class="day-item--temperature">
+                                   26°C
+                                </div>
+                                <div class="day-item--humidity">
+                                    <img src="./icon/icon-weather/humidity.png" alt="humidity" class="day-item--icon-humidity">
+                                    <p class="day-item--humidity">25%</p>
+                                </div>
+                            </li>
+
+                            <li class="day-item grid__colum-1-5">
+                                <h5 class="day-time--color">Hôm nay</h5>                                   
+                                <div class="day-item--img">
+                                    <img src="./img/cloudy.png" alt="icon weather" class="day-item--icon-weather-2">
+                                </div>
+                                <div class="day-item--temperature">
+                                   26°C
+                                </div>
+                                <div class="day-item--humidity">
+                                    <img src="./icon/icon-weather/humidity.png" alt="humidity" class="day-item--icon-humidity">
+                                    <p class="day-item--humidity">25%</p>
+                                </div>
+                            </li>
+
+                            <li class="day-item grid__colum-1-5">
+                                <h5 class="day-time--color">Hôm nay</h5>                                   
+                                <div class="day-item--img">
+                                    <img src="./img/cloudy.png" alt="icon weather" class="day-item--icon-weather-2">
+                                </div>
+                                <div class="day-item--temperature">
+                                   26°C
+                                </div>
+                                <div class="day-item--humidity">
+                                    <img src="./icon/icon-weather/humidity.png" alt="humidity" class="day-item--icon-humidity">
+                                    <p class="day-item--humidity">25%</p>
+                                </div>
+                            </li>
+
+                            <li class="day-item grid__colum-1-5">
+                                <h5 class="day-time--color">Hôm nay</h5>                                   
+                                <div class="day-item--img">
+                                    <img src="./img/cloudy.png" alt="icon weather" class="day-item--icon-weather-2">
+                                </div>
+                                <div class="day-item--temperature">
+                                   26°C
+                                </div>
+                                <div class="day-item--humidity">
+                                    <img src="./icon/icon-weather/humidity.png" alt="humidity" class="day-item--icon-humidity">
+                                    <p class="day-item--humidity">25%</p>
+                                </div>
+                            </li>
+                            
+                        </ul>
+                    </nav>
+                </nav>
+                
+            </div>
+
+            <!-- Tìm kiếm gần đây -->
+            <nav class="recent-searches grid__colum-15--1-right">
+                <div class="recent-searches--title ">
+                    <h3 class="title--text">Tìm kiếm gần đây</h3>
+                </div>
+                
+                <div class="recent-searches--list">
+                    <ul class="searches--list">
+                        <li class="searches--list--item grid__colum-9">
+                            <div class="item-province">
+                                <h3 class="item-province--text">Hòa Bình</h3>
+                            </div>
+                            
+                            <a href="#" class="item-detail-click">Chi tiết</a>
+                            
+                            <div class="item-detail">
+                                <img class="item-detail--img" src="./icon/weather/weather/64x64/day/374.png" alt="anh minh hoa">
+                                <div class="item-detail--temperature-status">
+                                    <div class="item-detail--temperature">26°C</div>
+                                    <div class="item-detail--status">Nắng nhẹ</div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="searches--list--item grid__colum-9">
+                            <div class="item-province">
+                                <h3 class="item-province--text">Hòa Bình</h3>
+                            </div>
+                            
+                            <a href="#" class="item-detail-click">Chi tiết</a>
+                            
+                            <div class="item-detail">
+                                <img class="item-detail--img" src="./icon/weather/weather/64x64/day/374.png" alt="anh minh hoa">
+                                <div class="item-detail--temperature-status">
+                                    <div class="item-detail--temperature">26°C</div>
+                                    <div class="item-detail--status">Nắng nhẹ</div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="searches--list--item grid__colum-9">
+                            <div class="item-province">
+                                <h3 class="item-province--text">Hòa Bình</h3>
+                            </div>
+                            
+                            <a href="#" class="item-detail-click">Chi tiết</a>
+                            
+                            <div class="item-detail">
+                                <img class="item-detail--img" src="./icon/weather/weather/64x64/day/374.png" alt="anh minh hoa">
+                                <div class="item-detail--temperature-status">
+                                    <div class="item-detail--temperature">26°C</div>
+                                    <div class="item-detail--status">Nắng nhẹ</div>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="searches--list--item grid__colum-9">
+                            <div class="item-province">
+                                <h3 class="item-province--text">Hòa Bình</h3>
+                            </div>
+                            
+                            <a href="#" class="item-detail-click">Chi tiết</a>
+                            
+                            <div class="item-detail">
+                                <img class="item-detail--img" src="./icon/weather/weather/64x64/day/374.png" alt="anh minh hoa">
+                                <div class="item-detail--temperature-status">
+                                    <div class="item-detail--temperature">26°C</div>
+                                    <div class="item-detail--status">Nắng nhẹ</div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+        </div>
+
+        <div class="footer grid__full-width">
+            
+        </div>
+    </div>
+</body>
+<script src="./js/script.js"></script>
+</html>

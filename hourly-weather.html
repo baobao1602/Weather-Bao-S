@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/hourly-weather.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="./icon/themify-icons/themify-icons.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="./font/fontawesome-free-6.5.1-web/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <title>Weather-Bao'S -> hourly </title>
+    <link rel="icon" href="./img/logo-wether/sun.png" type="image/x-icon" />
+</head>
+<body>
+    
+        <div class="app">
+            <div class="header grid__full-width">
+                <div class="header-logo">
+                    <a href="./index.html"><img src="./img/logo-wether/Weather-Bao_S-removebg-preview.png" alt="logo"></a>
+                </div> 
+                <div class="header-search"> 
+                    <div class="header-search--input grid__colum-10--1">
+                        <input type="text" id="search-history-id" class="search-history" placeholder="Nhập tỉnh/TP của bạn..." >
+                        
+                        <nav class="search-menu">
+                            <div class="search-menu--region">
+    
+                                <ul class="menu-region">Đông Bắc Bộ
+                                    <li class="region-city">Hà Giang</li>
+                                    <li class="region-city">Cao Bằng</li>
+                                    <li class="region-city">Bắc Kạn</li>
+                                    <li class="region-city">Tuyên Quang</li>
+                                    <li class="region-city">Thái Nguyên</li>
+                                    <li class="region-city">Lạng Sơn</li>
+                                    <li class="region-city">Quảng Ninh</li>
+                                    <li class="region-city">Bắc Giang</li>
+                                    <li class="region-city">Phú Thọ</li>
+                                </ul>
+    
+                                <ul class="menu-region">Đông Bắc Bộ
+                                    <li class="region-city">Hà Giang</li>
+                                    <li class="region-city">Cao Bằng</li>
+                                    <li class="region-city">Bắc Kạn</li>
+                                    <li class="region-city">Tuyên Quang</li>
+                                    <li class="region-city">Thái Nguyên</li>
+                                    <li class="region-city">Lạng Sơn</li>
+                                    <li class="region-city">Quảng Ninh</li>
+                                    
+                                </ul>
+    
+                                
+                            
+                            </div>
+                        </nav>
+    
+                    </div>
+                    <button class="button-icon--search"><i class="icon-search ti-search"></i></button>
+                </div>
+                
+                <div class="time-day">
+                    Giờ địa phương : 
+                    <div class="time-hearder">2020-05-15 09:15</div>
+                    
+                    
+                </div>
+            </div>
+
+            <div class="menu-main ">
+                <nav class="category">
+
+                    <ul class="category-list">
+                        <li class="category-item"> 
+                            <a href="./index.html" class="list-item">Vị trí hiện tại</a>
+                        </li>
+                        <li class="category-item"> 
+                            <a href="./hourly-weather.html" class="list-item">Thời tiết theo giờ</a>
+                        </li>
+                        <li class="category-item"> 
+                            <a href="./day-weather.html" class="list-item">Thời tiết theo ngày</a>
+                        </li>
+                        <li class="category-item"> 
+                            <a href="./ari.html" class="list-item">Chất lượng không khí</a>
+                        </li>
+                    </ul>
+                
+                </nav>
+            </div>
+    
+        <!-- content -->
+            <div class="content grid">
+                <div class="grid__row">
+                    <div class="grid-colum-20" >
+
+                    </div>
+                    <div class="hourly-weather grid-colum-60-1">
+                        <div class="hourly-menu-order">
+                            <a href="./index.html" class="home">Trang chủ </a>> Thời tiết theo giờ
+                        </div>
+                        <div class="hourly-list">
+                            <h4 class="hourly-item--status">
+                                Thời tiết Hà Nội theo giờ (24h)
+                            </h4>
+                            <nav class="hourly-item-2">
+                                <ul class="hourly-ul">
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            01:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            02:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            03:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            04:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            05:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            06:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            07:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            08:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            09:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            10:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            11:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            12:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="hourly-li">
+                                        <h5 class="li-hour">
+                                            13:00
+                                        </h5>
+                                        <div class="li-status">
+                                            <div class="status-1">
+                                                <nav class="status-icon-temperature">
+                                                    <img src="./icon/weather/weather/64x64/day/116.png" alt="" class="status-img">
+                                                    <p class="status-temperature">26°C</p>
+                                                </nav>
+                                                <p class="status-caption">Trạng thái : Nắng nhẹ</p>
+                                                <p class="status-humidity">Độ ẩm : 50%</p>
+                                                <p class="status-wind-speed">Tốc độ gió : 5 km/h</p>
+                                                <p class="status-cloudDensity">Mật độ mây : 80%</p>
+                                            </div>
+                                            <div class="status-2">
+                                             
+                                                <p class="status-air">Chất lượng không khí : Trung bình</p>
+                                                <p class="status-vision">Tầm nhìn: 5 km</p>
+                                                <p class="status-chanceOfRain">Khả năng mưa : 10%</p>
+                                                <p class="status-windDirection">Hướng gió : Bắc</p>
+                                                <p class="status-UV">Chỉ số UV : 1,5</p>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                   
+
+                                    
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                    </div>
+                    <div class="grid-colum-20" >
+
+                    </div>
+                </div>
+            </div>
+           
+          
+    
+           
+    
+</body>
+</html>

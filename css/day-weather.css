@@ -1,0 +1,143 @@
+.day-weather {
+    display: inline-block;
+}
+
+.day-menu-order {
+    padding-left: 5px;
+    margin-top: 70px;
+    font-size: 1.4rem;
+    padding-bottom: 3px;
+    font-weight: 500;
+}
+
+
+
+.day-list {
+    color: var(--text-color);
+    background-color: var(--background-color);
+    height:auto;
+    margin-top: -15px;
+    border-radius: 10px;
+    padding-bottom: 20px;
+}
+
+.home {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+.home:hover {
+    color: var(--hover-color);
+}
+
+.day-item-2 {
+  
+    margin-left: 20px;
+    margin-right: 20px;
+  
+   
+}
+
+.day-item--status {
+   font-size: 1.4rem;
+   font-weight: 600;
+   border-bottom: 1px solid black;
+   padding-top: 10px;
+   padding-left: 10px;
+   padding-bottom: 4px;
+}
+
+.day-ul {
+    border-radius: 10px;
+    padding-left: 0%;
+    
+}
+
+.day-li { 
+    list-style: none;
+    font-size: 1.4rem;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    
+    background-color: var(--primary-color);
+}
+
+.li-hour {
+    padding-top: 10px;
+    padding-left: 3%;
+    padding-bottom: 4px;
+    font-size: 1.6rem;
+    border-bottom: 1px solid black;
+    font-weight: 500;
+}
+
+.li-status-day {
+    display: block;
+    padding-left: 8%;
+    margin-top: -3%;
+    
+}
+
+.day-status-1 {
+   
+}
+
+.day-status-2 {
+    display: flex;
+    font-size: 1.4rem;
+    margin-top: -20px;
+}
+
+.day-status-icon-temperature {
+    display: flex;
+    margin-bottom: -8px;
+}
+
+.day-status-img {
+    width: 80px;
+}
+
+.day-status--colum-30 {
+    width: 33%;
+}
+
+.day-status-temperature {
+    font-weight: 800;
+   font-size: 2.6rem;
+}
+
+.day-status-caption {
+    margin-top: 0;
+}
+
+.day-status-humidity {
+
+}
+
+
+
+.day-status-cloudDensity {
+
+}
+
+.day-status-air {
+
+}
+
+.day-status-vision {
+
+}
+
+.day-status-chanceOfRain {
+
+}
+
+.day-status-windDirection {
+
+}
+
+.day-status-UV {
+
+}
